@@ -283,6 +283,8 @@ int getClosestPoint(const struct Route* route, const struct Point pt)
 	return closestIdx;
 }
 
+// Add test case
+
 int eqPt(const struct Point p1, const struct Point p2)
 {
 	return p1.row == p2.row && p1.col == p2.col;

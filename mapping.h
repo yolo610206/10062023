@@ -2,6 +2,7 @@
 #ifndef MAPPING_H
 #define MAPPING_H
 
+
 #define MAP_ROWS 25
 #define MAP_COLS 25
 #define MAX_ROUTE 100
@@ -9,6 +10,8 @@
 #define GREEN 4
 #define YELLOW 8
 #define DIVERSION 16
+#define BUILDING 32
+#define START 64
 
 /**
 * A map is a 2D raster representation of a map with contents of the map encoded as numeric values.
@@ -144,6 +147,10 @@ double distance(const struct Point* p1, const struct Point* p2);
 * and dest are the same point, it also returns a Route of zero length.
 */
 struct Route shortestPath(const struct Map* map, const struct Point start, const struct Point dest);
+
+// Add your own function prototypes here.  Do not change the prototypes above.
+int isBuilding(const struct Map* map, const struct Point pt);
+
 
 /**
 * Calculate all adjacent squares to a given point so that the squares do not overpal a building and do not include the backpath.
