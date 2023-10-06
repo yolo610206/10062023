@@ -8,6 +8,8 @@ int main(void)
 	struct Route blueRoute = getBlueRoute();
 	struct Map routeMap = addRoute(&baseMap, &blueRoute);
 
+	printf("TESTTEST");
+
 	printMap(&routeMap, 1, 1);
 
 	return 0;
