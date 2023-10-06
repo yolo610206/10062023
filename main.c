@@ -9,6 +9,7 @@ int main(void)
 	struct Map routeMap = addRoute(&baseMap, &blueRoute);
 
 	printf("TESTTEST");
+	printf("TESTTEST222");
 
 	printMap(&routeMap, 1, 1);
 
