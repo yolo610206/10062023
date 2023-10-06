@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include "mapping.h"
 
+//123324343443
+
 int main(void)
 {
 	struct Map baseMap = populateMap();
